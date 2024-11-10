@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "django_browser_reload",
     "compressor",
     "theme",
+    "crispy_forms",
+    "crispy_tailwind",
     # apps
     "sample_app",
 ]
@@ -181,3 +183,9 @@ COMPRESS_CSS_FILTERS = [
     "compressor.filters.css_default.CssAbsoluteFilter",
     "compressor.filters.cssmin.CSSMinFilter",
 ]
+
+# crispy forms settings
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+
+CRISPY_TEMPLATE_PACK = "tailwind"
