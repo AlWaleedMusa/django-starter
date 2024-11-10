@@ -4,10 +4,10 @@ A Django boilerplate to get you started fast with development. easy and simple.
 # Features
 1- Django 5.1\
 2- User authentication ready to use [Django-allauth](https://docs.allauth.org/en/latest/)\
-3- Sqlite3 Database for development and a ready to use PostgreSQL Database set up\
-4- Dotenv for environment variables [Python dotenv](https://pypi.org/project/python-dotenv/)\
-5- Styling with [Django-tailwind](https://django-tailwind.readthedocs.io/en/latest/installation.html)\
-6- Fully set up [Flowbite for Django](https://flowbite.com/docs/getting-started/django/)\
+3- htmx for Ajax and websocket [htmx](https://htmx.org/)\
+4- Sqlite3 Database for development and a ready to use PostgreSQL Database set up\
+5- Dotenv for environment variables [Python dotenv](https://pypi.org/project/python-dotenv/)\
+6- Styling with [Django-tailwind](https://django-tailwind.readthedocs.io/en/latest/installation.html)\
 7- Forms [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)\
 8- Debug [Django debug toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)\
 9- Pillow for image handling [Pillow](https://pillow.readthedocs.io/en/stable/)\

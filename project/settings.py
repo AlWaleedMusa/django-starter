@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     "allauth.account",
     "tailwind",
     "django_browser_reload",
-    "compressor",
     "theme",
     "crispy_forms",
     "crispy_tailwind",
@@ -172,19 +171,6 @@ AUTHENTICATION_BACKENDS = [
 
 TAILWIND_APP_NAME = "theme"
 
-
-# Flowbite settings
-
-STATICFILES_FINDERS = [
-    "django.contrib.staticfiles.finders.FileSystemFinder",
-    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
-    "compressor.finders.CompressorFinder",
-]
-
-COMPRESS_CSS_FILTERS = [
-    "compressor.filters.css_default.CssAbsoluteFilter",
-    "compressor.filters.cssmin.CSSMinFilter",
-]
 
 # crispy forms settings
 
