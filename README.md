@@ -10,7 +10,8 @@ A Django boilerplate to get you started fast with development. easy and simple.
 6- Fully set up [Flowbite for Django](https://flowbite.com/docs/getting-started/django/)\
 7- Forms [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)\
 8- Debug [Django debug toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)\
-9- Pillow for image handling [Pillow](https://pillow.readthedocs.io/en/stable/)
+9- Pillow for image handling [Pillow](https://pillow.readthedocs.io/en/stable/)\
+10- Live reload with [Django Browser Reload](https://github.com/tjwalch/django-browser-reload)
 
 
 # Table of content
@@ -61,9 +62,20 @@ A Django boilerplate to get you started fast with development. easy and simple.
     python manage.py createsuperuser
     ```
 
-8. Run the development server:
+8. Install dependencies:
+    ```sh
+    cd theme/static_src && npm install
+    cd ../..
+    ```
+
+9. Run the development server:
     ```sh
     python manage.py runserver
+    ```
+
+10. Start tailwind (New terminal tab)
+    ```sh
+    python3 manage.py tailwind start
     ```
 
 ## Usage

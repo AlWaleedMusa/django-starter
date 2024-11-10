@@ -19,6 +19,10 @@ DEBUG = getenv("DEBUG", default=False)
 
 ALLOWED_HOSTS = getenv("ALLOWED_HOSTS").split(",")
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
 
 # Application definition
 
@@ -32,6 +36,12 @@ INSTALLED_APPS = [
     # Third party
     "allauth",
     "allauth.account",
+    "tailwind",
+    "django_browser_reload",
+    "compressor",
+    "theme",
+    # apps
+    "sample_app",
 ]
 
 MIDDLEWARE = [
@@ -42,10 +52,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-
     # Third party middleware
     "allauth.account.middleware.AccountMiddleware",
-
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = "project.urls"
@@ -129,13 +138,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+
 STATICFILES_DIRS = [BASE_DIR / "static"]
+
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Media files (Images, Videos)
 # https://docs.djangoproject.com/en/5.1/topics/files/
 
 MEDIA_URL = "media/"
+
 MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
@@ -149,4 +161,23 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
     "allauth.account.auth_backends.AuthenticationBackend",
+]
+
+
+# django tailwind settings
+
+TAILWIND_APP_NAME = "theme"
+
+
+# Flowbite settings
+
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
+]
+
+COMPRESS_CSS_FILTERS = [
+    "compressor.filters.css_default.CssAbsoluteFilter",
+    "compressor.filters.cssmin.CSSMinFilter",
 ]
