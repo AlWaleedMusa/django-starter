@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "theme",
     "crispy_forms",
     "crispy_tailwind",
+    "debug_toolbar",
     # apps
     "sample_app",
 ]
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     # Third party middleware
     "allauth.account.middleware.AccountMiddleware",
     "django_browser_reload.middleware.BrowserReloadMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = "project.urls"
