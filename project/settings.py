@@ -173,8 +173,6 @@ TAILWIND_APP_NAME = "theme"
 
 TAILWIND_CSS_PATH = 'css/dist/styles.css'
 
-NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
-
 
 # crispy forms settings
 
