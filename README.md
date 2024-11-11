@@ -1,7 +1,9 @@
 # Django starter
+
 A Django boilerplate to get you started fast with development. easy and simple.
 
 # Features
+
 1- Django 5.1\
 2- User authentication ready to use [Django-allauth](https://docs.allauth.org/en/latest/)\
 3- htmx for Ajax and websocket [htmx](https://htmx.org/)\
@@ -13,8 +15,8 @@ A Django boilerplate to get you started fast with development. easy and simple.
 9- Pillow for image handling [Pillow](https://pillow.readthedocs.io/en/stable/)\
 10- Live reload with [Django Browser Reload](https://github.com/tjwalch/django-browser-reload)
 
-
 # Table of content
+
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Contributing](#contributing)
@@ -23,64 +25,81 @@ A Django boilerplate to get you started fast with development. easy and simple.
 ## Installation
 
 1. Clone the repository:
+
     ```sh
     git clone https://github.com/alwaleedmusa/django-starter.git
     cd django-starter
     ```
 
-2. Create a virtual environment and activate it:
+2. Remove this git and add a new project repo:
+
+    ```sh
+    rm -rf .git
+    git init
+    git remote add origin <new-repo-url>
+    ```
+
+3. Create a virtual environment and activate it:
+
     ```sh
     python3 -m venv env
     source env/bin/activate
     # On Windows use `env\Scripts\activate`
     ```
 
-3. Install the dependencies:
+4. Install the dependencies:
+
     ```sh
     pip install -r requirements.txt
     ```
 
-4. Copy `env-example` to `.env`:
+5. Copy `env-example` to `.env`:
+
     ```sh
     cp .env-example .env
     # Then add your credentials to `.env`
     ```
 
-5. Generate a secret key:
+6. Generate a secret key:
+
     ```sh
     python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
     # Copy the generated key and add it to your .env file as SECRET_KEY
     ```
 
-6. Apply migrations:
+7. Apply migrations:
+
     ```sh
     python manage.py migrate
     ```
 
-7. Create a superuser:
+8. Create a superuser:
+
     ```sh
     python manage.py createsuperuser
     ```
 
-8. Install tailwind dependencies:
+9. Install tailwind dependencies:
+
     ```sh
     python manage.py tailwind install
     ```
 
-9. Start tailwind
+10. Start tailwind
+
     ```sh
     python3 manage.py tailwind start
     ```
 
-10. Run the development server (New terminal tab):
+11. Run the development server (New terminal tab):
     ```sh
     python manage.py runserver
     ```
 
 ## Usage
 
-- Access the development server at `http://127.0.0.1:8000/`.
-- Use the admin interface at `http://127.0.0.1:8000/admin/` for managing users and other data.
+-   Access the development server at `http://127.0.0.1:8000/`.
+-   Use the admin interface at `http://127.0.0.1:8000/admin/` for managing users and other data.
 
 ## Contributing
 
