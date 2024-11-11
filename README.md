@@ -67,14 +67,14 @@ A Django boilerplate to get you started fast with development. easy and simple.
     python manage.py tailwind install
     ```
 
-9. Run the development server:
-    ```sh
-    python manage.py runserver
-    ```
-
-10. Start tailwind (New terminal tab)
+9. Start tailwind
     ```sh
     python3 manage.py tailwind start
+    ```
+
+10. Run the development server (New terminal tab):
+    ```sh
+    python manage.py runserver
     ```
 
 ## Usage
