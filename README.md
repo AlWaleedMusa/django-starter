@@ -62,10 +62,9 @@ A Django boilerplate to get you started fast with development. easy and simple.
     python manage.py createsuperuser
     ```
 
-8. Install dependencies:
+8. Install tailwind dependencies:
     ```sh
-    cd theme/static_src && npm install
-    cd ../..
+    python manage.py tailwind install
     ```
 
 9. Run the development server:
