@@ -171,6 +171,8 @@ AUTHENTICATION_BACKENDS = [
 
 TAILWIND_APP_NAME = "theme"
 
+TAILWIND_CSS_PATH = 'css/dist/styles.css'
+
 
 # crispy forms settings
 
