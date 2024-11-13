@@ -13,7 +13,7 @@ A Django boilerplate to get you started fast with development. easy and simple.
 7- Forms [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)\
 8- Debug [Django debug toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)\
 9- Pillow for image handling [Pillow](https://pillow.readthedocs.io/en/stable/)\
-10- Live reload with [Django Browser Reload](https://github.com/tjwalch/django-browser-reload)
+10- Live reload with [Django Browser Reload](https://pypi.org/project/django-browser-reload/)
 
 # Table of content
 
