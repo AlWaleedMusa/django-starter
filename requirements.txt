@@ -20,6 +20,7 @@ markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
 pillow==11.0.0
+psycopg2-binary==2.9.10
 Pygments==2.18.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
